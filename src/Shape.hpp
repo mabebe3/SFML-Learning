@@ -25,7 +25,8 @@ public:
 
 	// automatic shape creation
 	//void createShape(sf::Vector2f& origin, std::string shape);
-
+	void createCircle(sf::Vector2f& origin, unsigned int resolution, float radius);
+	void createRoundRect(sf::Vector2f& origin, unsigned int resolution, float radius, float width, float height);
 	// generated shape creation
 	float genRandBound(float min, float max) const;
 	void randomColor();
