@@ -12,6 +12,6 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 #src/Distribution.cpp src/Bucket.cpp src/Pop.cpp
-add_executable(main src/Window.cpp src/main.cpp  "src/Interaction.cpp" "src/physics.cpp" "src/Window.cpp")
+add_executable(main src/Window.cpp src/Shape.cpp src/main.cpp  "src/Interaction.cpp" "src/physics.cpp" "src/Window.cpp" "src/Shape.cpp")
 target_compile_features(main PRIVATE cxx_std_20)
 target_link_libraries(main PRIVATE SFML::Graphics)

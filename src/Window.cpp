@@ -3,10 +3,8 @@
 #include <SFML/Window/Event.hpp>
 
 WindowManager::WindowManager(unsigned int width, unsigned int height, std::string name) {
-	if (width < 0 or height < 0) {
-		//break
-	} 
-	window.create(sf::VideoMode({ width, height }), name);
+	// dont't need to check input for negative numbers b/c unsigned
+		window.create(sf::VideoMode({ width, height }), name);
 	// other settings
 }
 
